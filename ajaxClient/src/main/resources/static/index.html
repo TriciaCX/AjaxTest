@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+<a href="#" onclick="get1()">发生get1请求</a>
+
+<script>
+function get1(){
+	$.getJSON("http://localhost:8080/test/get1").then(
+	function(result){
+		console.log(result);
+	});
+	
+}
+</script>
+</body>
+</html>
